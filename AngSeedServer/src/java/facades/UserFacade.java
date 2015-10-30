@@ -11,17 +11,12 @@ public class UserFacade {
 
   public UserFacade() {
     //Test Users
-    User user = new User("user","test");
+    User user = new User("Peter","test");
     user.AddRole("User");
     users.put(user.getUserName(),user );
-    User admin = new User("admin","test");
+    User admin = new User("Anne","test");
     admin.AddRole("Admin");
     users.put(admin.getUserName(),admin);
-    
-    User both = new User("user_admin","test");
-    both.AddRole("User");
-    both.AddRole("Admin");
-    users.put(both.getUserName(),both );
   }
   
   public User getUserByUserId(String id){

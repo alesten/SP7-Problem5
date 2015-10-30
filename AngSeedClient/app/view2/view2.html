@@ -1,4 +1,6 @@
 <p>This is the partial for view 2.</p>
 <div>
-  <p>Data from server (Users ONLY) <b style="color: darkblue">{{data}}</b></p>
+    <ul>
+        <li ng-repeat="footballclub in footballclubs"><a href="{{footballclub.url}}">{{footballclub.name}}</a></li>
+    </ul>
 </div>
